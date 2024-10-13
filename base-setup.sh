@@ -7,5 +7,8 @@ sudo apt upgrade
 sudo apt install net-tools colordiff figlet toilet git 
 git clone https://github.com/hagen-gloetter/Linux-Console-Startup.git
 cat Linux-Console-Startup/bash.bashrc >> /etc/bash.bashrc
+mkdir .ssh
+cd .ssh
+scp hagen@dg7shg.de:~/.ssh/authorized_keys .
 
 adduser pi
